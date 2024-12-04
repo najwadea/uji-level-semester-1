@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,700');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+body {
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+.navbar {
+    background-color: white;
+}
+
+.navbar-brand img {
+    height: 50px;
+}
+
+.hero {
+    margin-top: 78px;
+    background-color: #FDFAD9;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.btn-shop {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    margin-top: 20px;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tops {
+    padding-top: 80px;
+}
+
+.product-card {
+    border: 0px solid #ddd;
+    border-radius: 0px;
+    padding-top: 7px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: auto;
+}
+
+.product-card .card-body{
+    text-align: left;
+   margin-left: 3px;  
+}
+
+.product-card h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 10px 0 5px;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 0;
+}
+
+/* .product-card .price {
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+} */
+
+.product-card .fav-icon {
+    color: red;
+    padding-right: 3px;
+}
+
+.detail {
+    padding-top: 80px;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    border: 2px solid transparent;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.color-option.active {
+    border: 2px solid black;
+}
+
+/* Tambahkan margin antara bagian "Eleganna Boutique" dan "Layanan" */
+.footer .col-lg-2:nth-child(2) {
+    margin-right: 40px; /* Tambahkan jarak di sini (misalnya 40px) */
+}
+
+.footer .col-lg-2:nth-child(3) {
+    margin-left: 40px; /* Tambahkan jarak di sini */
+}
+
+.footer .col-lg-2:nth-child(4) {
+    margin-left: 40px; /* Tambahkan jarak di sini */
+}
+
+.footer .col-lg-2:nth-child(5) {
+    margin-left: 40px; /* Tambahkan jarak di sini */
+}
+
+.store-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.store-image img {
+    width: 1200px;
+}
+
+.store-image-1 img {
+    width: 800px;
+    margin-left: 150px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 1%;
+    padding-top: 78px;
+    object-fit: cover;
+}
+
+.autoplay-progress {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+    --progress: 0;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    stroke-width: 4px;
+    stroke: var(--swiper-theme-color);
+    fill: none;
+    stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+    stroke-dasharray: 125.6;
+    transform: rotate(-90deg);
+}
+
+
+.headline {
+    font-size: 48px;
+    font-weight: bold;
+    
+}
+.subheadline {
+    font-size: 20px;
+    margin-top: 10px;
+}
+.btn-shop {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.about {
+    margin-top: 40%;
+}
+
+
+/* $gr-1:linear-gradient(170deg, #01E4F8 0%, #1D3EDE 100%);
+$gr-2:linear-gradient(170deg, #B4EC51 0%, #429321 100%);
+$gr-3:linear-gradient(170deg, #C86DD7 0%, #3023AE 100%);
+
+.gr-1{background: $gr-1;}
+.gr-2{background: $gr-2;}
+.gr-3{background: $gr-3;} */
+
+*{transition: .5s;}
+
+.h-100{height: 100vh !important;}
+.align-middle{
+  position: relative;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+.column{
+  margin-top:3rem;
+  padding-left:3rem;
+  &:hover{
+    padding-left:0;
+    .card .txt{
+      margin-left:1rem;
+      h1, p{
+        color:rgba(255,255,255,1);
+        opacity:1;
+      }
+    }
+    a{
+      color:rgba(255,255,255,1);
+      &:after{
+      width: 10%;
+      }
+    }
+  }
+}
+.card{
+  height: 450px;
+  margin: 0;
+  padding: 1.7rem 1.2rem;
+  border: none;
+  border-radius: 0;
+  color:rgba(0,0,0,1);
+  letter-spacing: .05rem;
+  font-family: 'Oswald', sans-serif;
+  box-shadow: 0 0 21px rgba(0,0,0,.27);
+  .txt{
+    margin-left:-3rem;
+    z-index: 1;
+    h1{
+      font-size:1.5rem;
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+.accordion-button {
+    background-color: transparent !important; /* Hapus warna biru */
+    box-shadow: none !important; /* Hapus efek bayangan */
+  }
+  
+.accordion-button:focus {
+    outline: none !important; /* Hapus garis fokus */
+    box-shadow: none !important;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 10px; /* Mengurangi jarak bawah */
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    position: relative;
+  }
+
+  .section-title::before,
+  .section-title::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: #000;
+    border-top: 5px solid #333; /* Garis lebih tebal */
+    margin: 0 15px;
+  }
+
+  .section-subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px; /* Mengurangi jarak ke bawah */
+    position: relative;
+  }
+
+  .section-subtitle::after {
+    content: "";
+    display: block;
+    width: 40%; /* Panjang garis sesuai teks */
+    height: 2px;
+    background-color: #000;
+    margin: 6px auto 0; /* Jarak antara teks dan garis */
+  }
+
+
+.card-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.table img {
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.table {
+    width: 100%;
+}  
+
+.create {
+    padding-top: 5%;
+}
